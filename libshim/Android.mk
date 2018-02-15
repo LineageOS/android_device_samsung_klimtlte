@@ -23,3 +23,9 @@ LOCAL_SRC_FILES := libshim.cpp
 LOCAL_MODULE := libshim
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_SHARED_LIBRARY)
+
+LOCAL_SHARED_LIBRARIES := liblog
+LOCAL_SRC_FILES := libshim_zygote.cpp
+LOCAL_MODULE := libshim_zygote
+LOCAL_MODULE_TAGS := optional
+include $(BUILD_SHARED_LIBRARY)
